@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <link rel="stylesheet" href="./styles/artikel.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="logo-link">
+        <div class="logo-container">
+            <img src="./img/logofoto.webp" alt="Logo" class="logo-image">
+        </div>
+        <div class="logo-text">Webbouw</div>
+    </a>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="mobile-nav">
+            <ul>
+                <li >
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="over.html">Over</a></li>
+                <li><a href="fotos.html">Foto's</a></li>
+                <li class="current-page"><a href="artikel.html">Artikel</a></li>
+                
+                <li class="submenu-parent">
+                    <a href="#">Links</a>
+                    <ul class="submenu">
+                        <li><a href="github.html">Github</a></li>
+                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="hidden">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="over.html">Over</a></li>
+                <li><a href="fotos.html">Foto's</a></li>
+                <li class="current-page"><a href="artikel.html">Artikel</a></li>
+                <li>
+                    <a href="#">Links</a>
+                    <ul class="submenu_">
+                        <li><a href="https://github.com/Nikoleta79">Github</a></li>
+                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr class="section-divider">
+
+
+
+    <header>
+        <h1>Je kunt ook nuttige artikelen vinden om je te helpen bij het ontwikkelen van je website</h1>
+    </header>
+    <hr class="section-divider">
+    <main class="container">
+        <section class="articles">
+            <h2>How to Create a Table with HTML and CSS?</h2>
+            <section class="table">
+                <h2>"Example of a Simple Table"</h2>
+                <table>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                </table>
+            </section>
+
+            <p>Het maken van een tabel is een van de fundamentele onderdelen van het ontwikkelen van webpagina's.
+                Met HTML en CSS kunnen we eenvoudig tabellen maken en stijlen toepassen om de presentatie te
+                verbeteren. In dit artikel zullen we stap voor stap door het proces gaan van het maken van een
+                eenvoudige tabel met behulp van HTML en CSS.</p>
+
+            <p><b>Stap 1:</b> met HTML
+                Laten we beginnen met het opzetten van de HTML-structuur voor onze tabel. Hier is een voorbeeld van
+                een eenvoudige tabel met drie rijen en drie kolommen:</p>
+            <figure><img src="./img/tafelmethtml.PNG" alt="tafel met html">
+                <figcaption>Tafel met html</figcaption>
+            </figure>
+
+            <p>In dit HTML-bestand hebben we een tabel gedefinieerd met behulp van de table, tr en td elementen voor
+                respectievelijk de tabel, de rijen en de cellen.</p>
+
+            <p><b>Stap 2:</b> Stijl toevoegen met CSS
+                Nu we de tabelstructuur hebben gedefinieerd, kunnen we CSS gebruiken om stijlen toe te passen op de
+                tabel en de inhoud ervan. Hier is een voorbeeld van een eenvoudige CSS-stijl voor onze tabel:</p>
+            <figure><img src="./img/tafelcss.PNG" alt="tafel met css">
+                <figcaption>Tafel met css</figcaption>
+            </figure>
+
+            <p>In dit CSS-bestand hebben we stijlen toegepast op de tabel, de koppen en de cellen om de tabel een
+                nette uitstraling te geven.</p>
+            <p><b>Stap 3:</b> Samenvoegen en testen
+                Nu we zowel de HTML-structuur als de CSS-stijlen hebben gedefinieerd, kunnen we onze bestanden
+                samenvoegen en de tabel in een webbrowser bekijken. Zorg ervoor dat zowel het HTML-bestand als het
+                CSS-bestand zich in dezelfde map bevinden en open het HTML-bestand in je favoriete webbrowser.
+                Gefeliciteerd! Je hebt zojuist een tabel gemaakt met behulp van HTML en CSS. Je kunt deze basis
+                verder uitbreiden door meer rijen en kolommen toe te voegen, en door geavanceerdere CSS-stijlen toe
+                te passen om de tabel aan te passen aan je specifieke ontwerpeisen.</p>
+
+            <p>Dit artikel biedt een introductie tot het maken van een tabel met HTML en CSS. Veel plezier met het
+                verkennen van verdere mogelijkheden en het creëren van tabelgebaseerde lay-outs voor je webpagina's! Wil
+                je meer leren? Bekijk onder 'artiekl' GitHub en ICT om meer te leren.</p>
+        </section>
+
+        <p><button onclick="showAlert()">Heeft u een vraag?</button></p>
+
+        <section class="comments">
+            <h2>Menning</h2>
+            <label for="comment">Geef jouw menning:</label><br>
+        <textarea id="comment" name="comment" rows="4" required></textarea><br>
+
+        <input type="submit" value="Stuur">           
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nikoleta. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert('Stuur een bericht of contact me ');
+        }
+    </script>
+     <script>
+        document.getElementById('moleButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'https://github.com/Nikoleta79/Molegame';
+        });
+    
+        function toggleMenu() {
+    var desktopNav = document.querySelector('nav:not(#mobile-nav)');
+    desktopNav.classList.toggle('hidden');
+    var newNav = document.querySelector('nav');
+    newNav.classList.toggle('hidden');
+}
+    </script>
+</body>
+
+</html>

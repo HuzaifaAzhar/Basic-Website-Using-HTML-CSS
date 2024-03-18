@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./styles/over.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+    <a class="logo-link">
+        <div class="logo-container">
+            <img src="./img/logofoto.webp" alt="Logo" class="logo-image">
+        </div>
+        <div class="logo-text">Webbouw</div>
+    </a>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav id="mobile-nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="current-page"><a href="over.html">Over</a></li>
+            <li><a href="fotos.html">Foto's</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+
+            <li class="submenu-parent">
+                <a href="#">Links</a>
+                <ul class="submenu">
+                    <li><a href="github.html">Github</a></li>
+                    <li><a
+                            href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="hidden">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="current-page"><a href="over.html">Over</a></li>
+            <li><a href="fotos.html">Foto's</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li>
+                <a href="#">Links</a>
+                <ul class="submenu_">
+                    <li><a href="https://github.com/Nikoleta79">Github</a></li>
+                    <li><a
+                            href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <hr class="section-divider">
+
+
+    <header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Over mij</h2>
+                        <p>Ben je benieuwd naar het getalenteerde team achter de realisatie van jouw dromerige WebHome?
+                            Zoek niet verder - het ben ik, NikolBen je nieuwsgierig naar het getalenteerde team dat jouw
+                            dromerige WeHome tot leven brengt? Zoek niet verder - het ben ik, Nikoleta! Als toegewijde
+                            student Front-End ontwikkeling sta ik klaar om jouw website naar een hoger niveau te tillen.
+                            Laten we samenwerken en jouw visie werkelijkheid maken!</p>
+                        <p>Blader gerust door mijn <button id="github" class="github">github</button> en neem contact
+                            met mij op als u
+                            vragen of projectaanvragen heeft.</p>
+                        <script>
+                            document.getElementById('github').addEventListener('click', function (event) {
+                                event.preventDefault();
+                                window.location.href = 'https://github.com/Nikoleta79/Molegame';
+                            });
+                        </script>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./img/happy.svg.svg" alt="My Happy SVG">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <footer class="footer">
+
+        <p>&copy; 2024 Nikoleta. All rights reserved.</p>
+
+    </footer>
+    <script>
+        document.getElementById('moleButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'https://github.com/Nikoleta79/Molegame';
+        });
+
+        function toggleMenu() {
+            var desktopNav = document.querySelector('nav:not(#mobile-nav)');
+            desktopNav.classList.toggle('hidden');
+            var newNav = document.querySelector('nav');
+            newNav.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
