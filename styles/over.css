@@ -2,72 +2,53 @@
     --main-color: #3498db;
     --secondary-color: #e74c3c;
     }
+.submenu-parent:hover .submenu {
+    display: block;
+}
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+nav ul {
+    list-style-type: none;
+}
 
-* {
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        font-family: "Trirong";
-    }
+nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
-    .section-divider {
-        border: none;
-        border-top: 1px solid black;
-        margin: 40px 0;
-    }
-    
-    .nav{
-        position: absolute;
-        top: 10px;
-        right: 200px;
-    }
-    .submenu-parent:hover .submenu {
-        display: block;
-    }
-    
-    nav ul li a:hover {
-        color: var(--secondary-color);
-    }
-    
-    nav ul {
-        list-style-type: none;
-    }
-    
-    nav {
-        position: absolute;
-        top: 10px;
-        right: 200px;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    nav ul li {
-        margin-left: 10px;
-        position: relative;
-    }
-    
-    nav ul li a {
-        color: black;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin: 0 10px;
-    }
-    
-    nav ul {
-        list-style-type: none;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin: 0 10px;
-    }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
 
 .logo {
@@ -90,8 +71,6 @@
     font-size: 20px;
     color: black;
     text-decoration: none;
-    position: relative;
-    top: -30px;
 }
 
 .logo span {
@@ -103,11 +82,17 @@
     text-decoration: none;
     color: inherit;
 }
-
 nav ul li.current-page:hover .submenu {
     display: block;
 }
 
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Trirong";
+}
 
 span {
     font-style: italic;
@@ -121,10 +106,10 @@ span {
 
 
 .current-page {
-    background-color: #D3D3D3;
-    color: red;
+    background-color: #e06598d3;
+    color: white;
     font-weight: bold;
-}
+    }
 
 .submenu {
     display: none;
@@ -194,7 +179,6 @@ span {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    text-align: justify;
 }
 
 .hero-text {
@@ -234,27 +218,11 @@ span {
     border-radius: 10px;
 }
 
-.github{
-    background-color: lightgrey;
-    border-style: none;
-    }
-
-.github:hover{
-    color: red;
-    }
-
 footer {
-    border-top-style: solid;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    margin: 10px;
-    
+    color: black;
+    text-align: center;
+    padding: 20px 0;
 }
-
 
 @media only screen and (max-width: 320px) {
           nav {
@@ -347,8 +315,6 @@ footer {
     }
 
     footer {
-        border-top-style: solid;
-
         padding: 40px 0;
     }
 }

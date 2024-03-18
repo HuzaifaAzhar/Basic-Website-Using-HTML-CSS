@@ -17,52 +17,23 @@
         </div>
         <div class="logo-text">Webbouw</div>
     </a>
-        <!-- Hamburger icon -->
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav id="mobile-nav">
-            <ul>
-                <li >
-                    <a href="index.html">Home</a>
-                </li>
-                <li><a href="over.html">Over</a></li>
-                <li><a href="fotos.html">Foto's</a></li>
-                <li class="current-page"><a href="artikel.html">Artikel</a></li>
-                
-                <li class="submenu-parent">
-                    <a href="#">Links</a>
-                    <ul class="submenu">
-                        <li><a href="github.html">Github</a></li>
-                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <nav class="hidden">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li><a href="over.html">Over</a></li>
-                <li><a href="fotos.html">Foto's</a></li>
-                <li class="current-page"><a href="artikel.html">Artikel</a></li>
-                <li>
-                    <a href="#">Links</a>
-                    <ul class="submenu_">
-                        <li><a href="https://github.com/Nikoleta79">Github</a></li>
-                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over.html">Over</a></li>
+            <li><a href="fotos.html">Foto's</a></li>
+            <li class="current-page">
+                <a href="artikel.html">Artikel</a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/Nikoleta79">Github</a></li>
+                    <li><a
+                            href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Wil jij meer weten over web development?</h1>
@@ -132,7 +103,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <p>&copy; 2024 Nikoleta. All rights reserved.</p>
     </footer>
 
@@ -140,19 +111,6 @@
         function showAlert() {
             alert('Stuur een bericht of contact me ');
         }
-    </script>
-     <script>
-        document.getElementById('moleButton').addEventListener('click', function (event) {
-            event.preventDefault();
-            window.location.href = 'https://github.com/Nikoleta79/Molegame';
-        });
-    
-        function toggleMenu() {
-    var desktopNav = document.querySelector('nav:not(#mobile-nav)');
-    desktopNav.classList.toggle('hidden');
-    var newNav = document.querySelector('nav');
-    newNav.classList.toggle('hidden');
-}
     </script>
 </body>
 

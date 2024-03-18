@@ -10,60 +10,56 @@
 </head>
 
 <body>
-    <a class="logo-link">
+    <a href="index.html" class="logo-link">
         <div class="logo-container">
-            <img src="./img/logofoto.webp" alt="Logo" class="logo-image">
+            <img src="./img/logofoto.png" alt="Logo" class="logo-image">
         </div>
         <div class="logo-text">Webbouw</div>
     </a>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav id="mobile-nav">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li class="current-page"><a href="over.html">Over</a></li>
-            <li><a href="fotos.html">Foto's</a></li>
-            <li><a href="artikel.html">Artikel</a></li>
+        <!-- Hamburger icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="mobile-nav">
+            <ul>
+                <li >
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="current-page"><a href="over.html">Over</a></li>
+                <li><a href="fotos.html">Foto's</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                
+                <li class="submenu-parent">
+                    <a href="#">Links</a>
+                    <ul class="submenu">
+                        <li><a href="github.html">Github</a></li>
+                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <li class="submenu-parent">
-                <a href="#">Links</a>
-                <ul class="submenu">
-                    <li><a href="github.html">Github</a></li>
-                    <li><a
-                            href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <nav class="hidden">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li class="current-page"><a href="over.html">Over</a></li>
-            <li><a href="fotos.html">Foto's</a></li>
-            <li><a href="artikel.html">Artikel</a></li>
-            <li>
-                <a href="#">Links</a>
-                <ul class="submenu_">
-                    <li><a href="https://github.com/Nikoleta79">Github</a></li>
-                    <li><a
-                            href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <hr class="section-divider">
+        <nav class="hidden">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="current-page"><a href="over.html">Over</a></li>
+                <li><a href="fotos.html">Foto's</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li>
+                    <a href="#">Links</a>
+                    <ul class="submenu_">
+                        <li><a href="https://github.com/Nikoleta79">Github</a></li>
+                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
 
     <header>
@@ -72,13 +68,13 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <h2>Over mij</h2>
-                        <p>Ben je benieuwd naar het getalenteerde team achter de realisatie van jouw dromerige WebHome?
-                            Zoek niet verder - het ben ik, NikolBen je nieuwsgierig naar het getalenteerde team dat jouw
-                            dromerige WeHome tot leven brengt? Zoek niet verder - het ben ik, Nikoleta! Als toegewijde
-                            student Front-End ontwikkeling sta ik klaar om jouw website naar een hoger niveau te tillen.
-                            Laten we samenwerken en jouw visie werkelijkheid maken!</p>
-                        <p>Blader gerust door mijn <button id="github" class="github">github</button> en neem contact
-                            met mij op als u
+                        <p>Hallo, ik ben Nikoleta. Ik streef ernaar mijn studie succesvol af te ronden door middel van
+                            het uitvoeren van verschillende projecten. Als je suggesties hebt of geïnteresseerd bent in
+                            mijn werk, aarzel dan niet om me een bericht te sturen.</p>
+                        <p>In mijn vrije tijd geniet ik ervan de nieuwste webtechnologieën te verkennen, te
+                            experimenteren met nieuwe ontwerpen en voortdurend te leren om mijn vaardigheden te
+                            verbeteren.</p>
+                        <p>Blader gerust door mijn <button id="github">github</button> en neem contact met mij op als u
                             vragen of projectaanvragen heeft.</p>
                         <script>
                             document.getElementById('github').addEventListener('click', function (event) {
@@ -88,7 +84,7 @@
                         </script>
                     </div>
                     <div class="hero-image">
-                        <img src="./img/happy.svg.svg" alt="My Happy SVG">
+                        <img src = "./img/happy.svg.svg" alt="My Happy SVG">
                     </div>
                 </div>
             </div>
@@ -96,22 +92,22 @@
     </header>
 
     <footer class="footer">
-
-        <p>&copy; 2024 Nikoleta. All rights reserved.</p>
-
+        
+            <p>&copy; 2024 Nikoleta. All rights reserved.</p>
+        
     </footer>
     <script>
         document.getElementById('moleButton').addEventListener('click', function (event) {
             event.preventDefault();
             window.location.href = 'https://github.com/Nikoleta79/Molegame';
         });
-
+    
         function toggleMenu() {
-            var desktopNav = document.querySelector('nav:not(#mobile-nav)');
-            desktopNav.classList.toggle('hidden');
-            var newNav = document.querySelector('nav');
-            newNav.classList.toggle('hidden');
-        }
+    var desktopNav = document.querySelector('nav:not(#mobile-nav)');
+    desktopNav.classList.toggle('hidden');
+    var newNav = document.querySelector('nav');
+    newNav.classList.toggle('hidden');
+}
     </script>
 </body>
 

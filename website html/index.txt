@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html_size" lang="nl">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -14,52 +14,26 @@
         <div class="logo-container">
             <img src="./img/logofoto.png" alt="Logo" class="logo-image">
         </div>
+        <div class="logo-text">Webbouw</div>
     </a>
-    <div class="logo-text">Webbouw</div>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-        <nav id="mobile-nav">
-            <ul>
-                <li class="current-page">
-                    <a href="index.html">Home</a>
-                </li>
-                <li><a href="over.html">Over</a></li>
-                <li><a href="fotos.html">Foto's</a></li>
-                <li><a href="artikel.html">Artikel</a></li>
-                
-                <li class="submenu-parent">
-                    <a href="#">Links</a>
-                    <ul class="submenu">
-                        <li><a href="github.html">Github</a></li>
-                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <nav class="hidden">
-            <ul>
-                <li class="current-page">
-                    <a href="index.html">Home</a>
-                </li>
-                <li><a href="over.html">Over</a></li>
-                <li><a href="fotos.html">Foto's</a></li>
-                <li><a href="artikel.html">Artikel</a></li>
-                <li>
-                    <a href="#">Links</a>
-                    <ul class="submenu_">
-                        <li><a href="https://github.com/Nikoleta79">Github</a></li>
-                        <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
+    <nav>
+        <ul>
+            <li class="current-page">
+                <a href="index.html">Home</a>
+            </li>
+            <li><a href="over.html">Over</a></li>
+            <li><a href="fotos.html">Foto's</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li>
+                <a href="#">Links</a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/Nikoleta79">Github</a></li>
+                    <li><a href="https://www.ictergezocht.nl/blog/functies-in-de-ict/54_wat-doet-een-front-end-developer/">ICT</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <hr class="section-divider">
     <header>
         <img src="./img/wallpaper.png" class="wallpaper" alt="kamer">
@@ -94,7 +68,7 @@
                 <a href="./img/telefoon.PNG" target="_blank">
                     <img src="./img/telefoon.PNG" alt="telefoon" height="300" width="200">
                 </a>
-                <iframe class="iframe_video" width="340" height="200" src="https://www.youtube.com/embed/Sjhau5T-NVg"></iframe>
+                <iframe width="340" height="200" src="https://www.youtube.com/embed/Sjhau5T-NVg"></iframe>
                 <video src="./img/pexels.mp4" controls preload="metadata" width="340" height="200"></video>
             </div>
         </section>
@@ -111,12 +85,11 @@
                 </div>
             </div>
             <div class="plaatje-item">
-                
+                <div class="image-box">
+                    <img src="./img/hond.jpg" alt="hond" height="100" width="100">
+                </div>
                 <div class="text-box">
                     <p>Of wil je een hond <a href="https://github.com/Nikoleta79/Dogapp">kiezen?</a></p>
-                </div>
-                <div class="image-box2">
-                    <img src="./img/hond.jpg" alt="hond" height="100" width="100">
                 </div>
             </div>
             <div class="plaatje-item">
@@ -137,14 +110,6 @@
             event.preventDefault();
             window.location.href = 'https://github.com/Nikoleta79/Molegame';
         });
-    
-        function toggleMenu() {
-    var desktopNav = document.querySelector('nav:not(#mobile-nav)');
-    desktopNav.classList.toggle('hidden');
-    var newNav = document.querySelector('nav');
-    newNav.classList.toggle('hidden');
-}
     </script>
 </body>
 </html>
-

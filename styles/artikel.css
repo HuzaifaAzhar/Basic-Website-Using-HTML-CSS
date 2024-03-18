@@ -71,8 +71,6 @@
         font-size: 20px;
         color: black;
         text-decoration: none;
-        position: relative;
-        top: -30px;
     }
     
     .logo span {
@@ -111,10 +109,10 @@ span {
 
 
 .current-page {
-    background-color: #D3D3D3;
-    color: red;
+    background-color: #e06598d3;
+    color: white;
     font-weight: bold;
-}
+    }
 
 .submenu {
     display: none;
@@ -170,14 +168,10 @@ nav ul li.current-page:hover .submenu {
 
 .section-divider {
     border: none;
-    border-top: 1px solid black;
-    margin: 40px 0;
+    border-top: 1px solid #ddd; 
+    margin: 40px 0; 
 }
-nav{
-    position: absolute;
-    top: 10px;
-    right: 200px;
-}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -243,43 +237,6 @@ button {
     font-size: 16px; 
 }
 
-
-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-}
- 
-input[type="submit"] {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
 button:hover {
     background-color: #0056b3; }
 
@@ -289,7 +246,6 @@ button:hover {
     background-color: #f9f9f9;
     font-family: 'Roboto', sans-serif;
 }
-
 
 
 @media screen and (min-width: 1440px) {
@@ -432,9 +388,4 @@ display: none;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}
-
-.footer{
-    border-top-style: solid;
-
 }
